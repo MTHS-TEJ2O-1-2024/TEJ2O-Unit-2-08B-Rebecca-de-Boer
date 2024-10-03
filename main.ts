@@ -17,23 +17,6 @@ input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Yes)
     pins.digitalWritePin(DigitalPin.P13, 1)
 })
-input.onButtonPressed(Button.B, function () {
+basic.pause(1000)
     basic.showIcon(IconNames.No)
     pins.digitalWritePin(DigitalPin.P13, 0)
-})
-input.onButtonPressed(Button.A, function () {
-    basic.showIcon(IconNames.Yes)
-    pins.digitalWritePin(DigitalPin.P14, 1)
-})
-input.onButtonPressed(Button.B, function () {
-    basic.showIcon(IconNames.No)
-    pins.digitalWritePin(DigitalPin.P14, 0)
-})
-input.onButtonPressed(Button.A, function () {
-    basic.showIcon(IconNames.Yes)
-    pins.digitalWritePin(DigitalPin.P15, 1)
-})
-input.onButtonPressed(Button.B, function () {
-    basic.showIcon(IconNames.No)
-    pins.digitalWritePin(DigitalPin.P15, 0)
-})
