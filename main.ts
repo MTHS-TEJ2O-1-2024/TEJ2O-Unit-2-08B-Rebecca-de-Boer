@@ -15,8 +15,27 @@ pins.digitalWritePin(DigitalPin.P15, 0)
 //Code
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Yes)
+
+    // red
     pins.digitalWritePin(DigitalPin.P13, 1)
-})
-basic.pause(1000)
+    pause(1000)
     basic.showIcon(IconNames.No)
     pins.digitalWritePin(DigitalPin.P13, 0)
+    pause(1000)
+
+    // blue
+    basic.showIcon(IconNames.Yes)
+    pins.digitalWritePin(DigitalPin.P14, 1)
+    pause(1000)
+    basic.showIcon(IconNames.No)
+    pins.digitalWritePin(DigitalPin.P14, 0)
+    pause(1000)
+
+basic.showIcon(IconNames.Yes)
+pins.digitalWritePin(DigitalPin.P15, 1)
+
+pause(1000)
+
+basic.showIcon(IconNames.No)
+pins.digitalWritePin(DigitalPin.P15, 0)
+})
